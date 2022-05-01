@@ -1,0 +1,35 @@
+<svg width="500" height="598" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with UXWing SVG Editor - https://uxwing.com/svg-icon-editor/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="600" width="502" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <style transform="matrix(1.9290121985070527,0,0,1.9290121985070527,0,0) " type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+  <style transform="matrix(5.683197117266957,0,0,5.683197117266957,0,0) " type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+  <!-- Created with UXWing SVG Editor - https://uxwing.com/svg-icon-editor/ -->
+  <g stroke="null" id="svg_38">
+   <g stroke="null" transform="matrix(0.96208814308877,0,0,1.1566404508030501,-1380.8377928059253,-171.22187347619143) " id="svg_35">
+    <title stroke="null" transform="translate(0,-0.8645728826522827) translate(10.818041801452637,-2120.336181640625) translate(1426.2054443359375,0) translate(0,2270.0126953125) ">background</title>
+    <rect stroke="null" x="1436.023486" y="147.811941" width="514" height="514" id="svg_33" fill="none"/>
+    <g stroke="null" id="svg_32" display="none">
+     <rect stroke="null" id="svg_36" width="311" height="467" x="1437.023486" y="148.811941" stroke-width="0" fill="url(#gridpattern)"/>
+    </g>
+   </g>
+   <g stroke="null" transform="matrix(0.96208814308877,0,0,1.1566404508030501,-1380.8377928059253,-171.22187347619143) " id="svg_37">
+    <title stroke="null" transform="translate(0,-0.8645728826522827) translate(10.818041801452637,-2120.336181640625) translate(1426.2054443359375,0) translate(0,2270.0126953125) ">Layer 1</title>
+    <style stroke="null" transform="translate(0,-0.8645728826522827) translate(10.818041801452637,-2120.336181640625) translate(1426.2054443359375,0) translate(0,2270.0126953125) " type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+    <g stroke="null" id="svg_29">
+     <g stroke="null" id="svg_30" transform="matrix(4.028792413739699,0,0,4.174848497177303,3.288327125009035,2.7837456729903653) ">
+      <path stroke="null" class="st0" d="m436.789779,120.303093c-4.35,4.77 -9.42,9.05 -15.12,12.51c-0.7,0.51 -1.65,0.58 -2.43,0.08c-8.41,-5.35 -15.48,-11.78 -21.03,-18.76c-7.66,-9.61 -12.49,-20.27 -14.14,-30.53c-1.68,-10.41 -0.11,-20.42 5.07,-28.56c2.04,-3.22 4.65,-6.15 7.83,-8.68c7.31,-5.83 15.66,-8.9 23.97,-8.84c8.01,0.06 15.91,3.05 22.74,9.28c2.4,2.18 4.42,4.68 6.07,7.39c5.57,9.17 6.77,20.87 4.32,32.73c-2.41,11.71 -8.41,23.62 -17.28,33.35l0,0.03l0,0l0,0zm-53.49,-8.24c1.98,0 3.59,1.61 3.59,3.59c0,1.98 -1.61,3.59 -3.59,3.59l-6.74,0l-8.88,28.67l103.22,0l-9.64,-28.67l-5.57,0c-1.98,0 -3.59,-1.61 -3.59,-3.59c0,-1.98 1.61,-3.59 3.59,-3.59l10.7,0l14.46,43.01l-122.87,0l13.32,-43.01l12,0l0,0zm36.06,-56.03c9.88,0 17.88,8.01 17.88,17.87c0,9.88 -8.01,17.88 -17.88,17.88c-9.88,0 -17.87,-8 -17.87,-17.88c-0.02,-9.87 7.99,-17.87 17.87,-17.87l0,0l0,0z" id="svg_31" fill="#f5deb3"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

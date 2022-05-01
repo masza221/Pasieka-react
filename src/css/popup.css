@@ -1,0 +1,125 @@
+.popup {
+  width: 80vw;
+  height: 90vh;
+  min-width: var(--min-width);
+  background: linear-gradient(rgba(104, 104, 104, 0.1), rgba(0, 0, 0, 0.8)),
+    url(../obrazy/webp/zdj4.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  left: 10vw;
+  top: 5vh;
+  z-index: 11;
+  overflow-y: auto;
+  border: 1px solid black;
+}
+.popup::-webkit-scrollbar {
+  width: 2px;
+}
+.popup::-webkit-scrollbar-thumb {
+  background-color: aqua;
+  height: 5px;
+}
+
+.popup .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 12;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0.7rem;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.popup .close div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: rgb(255, 238, 0);
+  transform: rotate(135deg);
+  transition: transform 0.4s ease;
+}
+.popup .close div::after {
+  content: "";
+  position: absolute;
+  z-index: 13;
+  top: 0px;
+  width: 100%;
+  height: 2px;
+  background: rgb(255, 153, 0);
+  transform: rotate(90deg);
+  transition: transform 0.4s ease;
+}
+.popup .close:hover div {
+  transform: rotate(225deg);
+}
+.popup .close:hover > div::after {
+  transform: rotate(-90deg);
+}
+
+.popup .pop-zdj {
+  position: relative;
+  width: 15vw;
+  height: 20vw;
+  min-height: 200px;
+  min-width: 150px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.popup .cena {
+  font-size: calc(22px + 1vw);
+}
+.popup .pop-title h2 {
+  font-size: calc(28px + 1.5vw);
+}
+
+.popup .popup-content {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 75vw;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+.popup .popup-content p {
+  margin-top: 1vh;
+  width: 90%;
+}
+
+.popup .popup-content h1 {
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
