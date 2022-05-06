@@ -22,3 +22,18 @@ body {
 #produkty h1 {
   align-self: center;
 }
+.show--fadeup {
+  bottom: 0 !important; 
+  opacity: 1 !important;
+}
+
+.show--fadedown{
+  top: 0 !important;
+  opacity: 1 !important;
+}
+.fadeup {
+  bottom: -100px;
+}
+.fadedown {
+  top: -100px;
+}

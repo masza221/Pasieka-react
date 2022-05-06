@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./css/App.css";
-import Info from "./Info.js";
+import "./css/app.css";
+import Info from "./comp/Info.js";
 import Products from "./comp/Products.js";
 import Front from "./comp/Front.js";
 import Popup from "./comp/Popup.js";
@@ -9,7 +9,7 @@ function App() {
   const [isActive, setActive] = useState({});
 
   return (
-    <div className="App">
+    <div className="app">
       <Front></Front>
       <Info></Info>
       <Products

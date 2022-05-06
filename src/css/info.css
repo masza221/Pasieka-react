@@ -12,14 +12,16 @@
     width: calc(20px + 1vw);
     height: calc(20px + 1vw);
   }
-  .about .info {
+ .info {
     position: relative;
     width: 22vw;
     margin: 1vw;
     font-size: 1rem;
-    transition: transform  1s ease 0.3s;
+    transition: all  1s ease 0.3s;
+    opacity: 0;
   } 
-  #about .info p {
+
+ .info p {
     position: relative;
     padding-top: 15px;
     text-align: center;

@@ -62,20 +62,6 @@
 .popup .close:hover > div::after {
   transform: rotate(-90deg);
 }
-
-.popup .pop-zdj {
-  position: relative;
-  width: 15vw;
-  height: 20vw;
-  min-height: 200px;
-  min-width: 150px;
-  border-radius: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 .popup .cena {
   font-size: calc(22px + 1vw);
 }
@@ -105,21 +91,4 @@
 .popup .popup-content h1 {
   position: relative;
   color: white;
-}
-
-.overlay {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 10;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.overlay.active {
-  opacity: 1;
-  pointer-events: all;
 }

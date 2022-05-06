@@ -4,7 +4,7 @@
             "name":"Lipowy",
             "title": "Miód Lipowy",
             "price":"40zł za 0.9l",
-            "img":"/obrazy/webp/miodek1.webp",
+            "img":"https://i.ibb.co/P9rdtmt/miodek1.webp",
             "content": "Miód lipowy jest stosowany przy przeziębieniach, grypie, infekcjach górnych dróg oddechowych, zapaleniu oskrzeli i zapaleniu płuc. Ma działanie napotne, przeciwkaszlowe, wykrztuśne i przeciwskurczowe. Łagodzi stany zapalne i działa przeciwgorączkowo."
         },
         {
@@ -12,7 +12,7 @@
             "name":"Wrzosowy",
             "title": "Miód Wrzosowy",
             "price":"80zł za 0.9l",
-            "img":"/obrazy/webp/miodek1.webp",
+            "img":"https://i.ibb.co/P9rdtmt/miodek1.webp",
             "content": "Miód wrzosowy ze względu na trudność i pracochłonność w pozyskaniu nazywany jest „Królem miodów”. Jest dostępny w niewielu pasiekach również z powodu małej liczby wrzosowisk w Polsce. To z kolei wpływa na jego cenę, która jest wyższa niż w przypadku innych odmian miodu. Jest pozyskiwany od pszczół w okresie od lipca do października. Miód ten jest bardzo esencjonalny i posiada naturalny zapach wrzosu. Jego smak natomiast jest raczej gorzkawy i ostry, co jest dość rzadkim zjawiskiem wśród odmian miodu."
         },
         {
@@ -20,7 +20,15 @@
             "name":"Gryczany",
             "title": "Miód Gryczany",
             "price":"35zł za 0.9l",
-            "img":"/obrazy/webp/miodek1.webp",
+            "img":"https://i.ibb.co/P9rdtmt/miodek1.webp",
+            "content": "Miód gryczany pozyskiwany jest przez pszczoły z kwiatów gryki. Jest to ziarnisty miód o brązowej barwie*, piekącym, słodkim smaku oraz silnym ziołowym aromacie. Jest to jeden z najzdrowszych miodów wykazujący dużą antybiotyczność."
+        } ,
+        {
+            "id": 4,
+            "name":"Jakiś",
+            "title": "Miód Jakiś",
+            "price":"35zł za 0.9l",
+            "img":"https://i.ibb.co/P9rdtmt/miodek1.webp",
             "content": "Miód gryczany pozyskiwany jest przez pszczoły z kwiatów gryki. Jest to ziarnisty miód o brązowej barwie*, piekącym, słodkim smaku oraz silnym ziołowym aromacie. Jest to jeden z najzdrowszych miodów wykazujący dużą antybiotyczność."
         } 
         

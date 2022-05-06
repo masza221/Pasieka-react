@@ -1,12 +1,24 @@
-import './css/info.css';
+import '../css/info.css';
+import { useEffect } from 'react';
+import {appearOnScroll} from '../appearOnScroll'
+
+
 
 
 const Info = () => {
 
+   
+  useEffect(()=>{
+   const faders = document.querySelectorAll(".info");
+   faders.forEach((fader) => {
+     appearOnScroll.observe(fader);
+   });
+ },[])
+
 
     return (
         <div className='about'>
-           <div className="info">
+           <div className="info fadeup">
            <p>
               <img src="obrazy/warranty.svg" alt="jakość" /><br />
               Najwyższa jakość → <br />
@@ -15,7 +27,7 @@ const Info = () => {
               sam że mamy najlepszy miód na roztoczu.
             </p>
            </div>
-           <div className="info">
+           <div className="info fadedown">
            <p>
               <img src="obrazy/warranty.svg" alt="jakość" /><br />
               Najwyższa jakość → <br />
@@ -24,7 +36,7 @@ const Info = () => {
               sam że mamy najlepszy miód na roztoczu.
             </p>
            </div>
-           <div className="info">
+           <div className="info fadeup">
            <p>
               <img src="obrazy/warranty.svg" alt="jakość" /><br />
               Najwyższa jakość → <br />
@@ -33,7 +45,7 @@ const Info = () => {
               sam że mamy najlepszy miód na roztoczu.
             </p>
            </div>
-           <div className="info">
+           <div className="info fadedown">
            <p>
               <img src="obrazy/warranty.svg" alt="jakość" /><br />
               Najwyższa jakość → <br />

@@ -23,7 +23,7 @@ const Products = ({ setActive }) => {
 
   return (
     <>
-      <Fala></Fala>
+      <Fala ></Fala>
       <div className="pre-title">Miody</div>
       <section id="produkty">     
         <Kafel popups={popups} showPopup={(val,val2) => showPopup(val,val2)}></Kafel>
