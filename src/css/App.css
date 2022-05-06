@@ -32,8 +32,8 @@ body {
   opacity: 1 !important;
 }
 .fadeup {
-  bottom: -100px;
+  bottom: -50px;
 }
 .fadedown {
-  top: -100px;
+  top: -50px;
 }

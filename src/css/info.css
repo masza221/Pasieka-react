@@ -1,7 +1,6 @@
 .about {
     background: #ffd700;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
     justify-content: center;
@@ -14,10 +13,10 @@
   }
  .info {
     position: relative;
-    width: 22vw;
-    margin: 1vw;
+    width: fit-content;
+    margin: 0 20px 0 20px;
     font-size: 1rem;
-    transition: all  1s ease 0.3s;
+    transition: all  0.7s ease 0.3s;
     opacity: 0;
   } 
 
@@ -25,4 +24,27 @@
     position: relative;
     padding-top: 15px;
     text-align: center;
+  }
+
+  @media screen and (max-width: 850px){
+    .about {
+      flex-wrap: wrap;
+    }
+    .info.fadeup {
+      bottom: 0;
+      left: -50px;
+    }
+    .info.fadedown {
+      top:0;
+      right: -50px;
+    }
+    .info.show--fadeup {
+      left: 0 !important; 
+      opacity: 1 !important;
+    }
+    
+    .info.show--fadedown{
+      right: 0 !important;
+      opacity: 1 !important;
+    }
   }

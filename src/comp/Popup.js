@@ -5,13 +5,18 @@ import '../css/popup.css';
 const Popup = ({ active, setActive, popupId}) => {
 
     const [values, setValues] = useState({})
+    const [loading, setLoading] = useState(true)
+
     useEffect(() => {
-        const fetchInterns = async () => {
+        const fetchData = async () => {
             const response = await require(`../data/data.json`);
+                
             const data = response.find(el => el.id === popupId)
             setValues(data);
+            setLoading(false);
+            
         };
-        fetchInterns();
+        fetchData();
     }, [active, popupId]);
 
     const popupRemove = () => {
@@ -21,7 +26,7 @@ const Popup = ({ active, setActive, popupId}) => {
 
     return (
         <>
-            <div className="popup">
+        {loading ===false && <div className="popup">
                 <div className="close" onClick={popupRemove}>
                     <div></div>
                 </div>
@@ -34,7 +39,8 @@ const Popup = ({ active, setActive, popupId}) => {
                         {values.content}
                     </p>
                 </div>
-            </div>
+            </div> }
+            
         </>
 
     )
