@@ -1,5 +1,13 @@
-.obraz1 {
-  overflow: hidden;
+.products {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 61vw;
 }
 .obraz img {
   object-fit: cover;
@@ -10,6 +18,7 @@
 }
 
 .pre-title {
+  width: 100%;
   font-size: 3rem;
   text-align: center;
   font-weight: bold;
@@ -51,6 +60,8 @@
   pointer-events: none;
 }
 .tekst_pod_obrazem {
+  text-decoration: none;
+  color: black;
   pointer-events: none;
   background-color: rgb(241, 241, 241);
   position: absolute;
@@ -61,9 +72,11 @@
   z-index: 1;
 }
 .tekst_pod_obrazem p {
+  height: 100%;
+  position: relative;
   pointer-events: none;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 button {
   background-color: rgba(240, 248, 255, 0);

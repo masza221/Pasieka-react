@@ -1,5 +1,11 @@
+import { collection, getDocs } from "firebase/firestore"
+import { db } from "../firebase"
 
-export const getPopups = async () => {
-    const data = require('../data/data.json')
-    return  await data
+const postCollectionRef = collection(db,"products")
+
+ const getProducts = async () => {
+    const data = await getDocs(postCollectionRef)
+    const products = data.docs.map(doc => ({...doc.data()}))
+    return products
 }
+export {getProducts}

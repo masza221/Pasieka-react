@@ -30,6 +30,14 @@
             "price":"35zł za 0.9l",
             "img":"https://i.ibb.co/P9rdtmt/miodek1.webp",
             "content": "Miód gryczany pozyskiwany jest przez pszczoły z kwiatów gryki. Jest to ziarnisty miód o brązowej barwie*, piekącym, słodkim smaku oraz silnym ziołowym aromacie. Jest to jeden z najzdrowszych miodów wykazujący dużą antybiotyczność."
+        },
+        {
+            "id": 5,
+            "name":"test",
+            "title": "Miód Test",
+            "price":"35zł za 0.9l",
+            "img":"https://i.ibb.co/P9rdtmt/miodek1.webp",
+            "content": "Miód gryczany pozyskiwany jest przez pszczoły z kwiatów gryki. Jest to ziarnisty miód o brązowej barwie*, piekącym, słodkim smaku oraz silnym ziołowym aromacie. Jest to jeden z najzdrowszych miodów wykazujący dużą antybiotyczność."
         } 
         
     ] 

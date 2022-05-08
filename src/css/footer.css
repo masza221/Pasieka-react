@@ -1,0 +1,48 @@
+.iko {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    position: relative;
+    margin: 1vw;
+    transition: all 0.3s ease-in-out 0.6s;
+    transform: scale(0);
+  }
+  .iko img {
+    width: 3vw;
+    min-width: 50px;
+    transition: transform 0.3s ease;
+  }
+  .iko img:hover {
+    transform: scale(1.5);
+  }
+  footer.showSocials .iko {
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  footer.showSocials .info-tekst > p::after {
+    width: 0%;
+  }
+  .info-tekst {
+  background-color: rgb(32, 32, 32);
+  color: wheat;
+  padding: 30px;
+  text-align: center;
+}
+
+.info-tekst > p {
+  display: inline;
+  position: relative;
+}
+.info-tekst > p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: wheat;
+  height: 100%;
+  width: 101%;
+  transition: all 0.3s ease-in-out 0.6s;
+}

@@ -1,29 +1,27 @@
 
 import { useEffect } from 'react';
 import {appearOnScroll} from '../appearOnScroll'
+import { Link } from 'react-router-dom';
 
 
 //------------pojawienie sie tekstu w info --------------//
 
 
-const Kafel = ({popups, showPopup}) => {
+const Kafel = ({products}) => {
     
   useEffect(()=>{
     const faders = document.querySelectorAll(".kafelki");
     faders.forEach((fader) => {
       appearOnScroll.observe(fader);
     });
-  },[popups])
+  },[products])
 
 
     return(
-        popups.map((el) => (
-
-          <div
-              key={el.id}
+        products.map((el) => (
+          <Link key={el.id} to={`/honey/${el.id}`}><div
               id={el.title}
               className="kafelki fadedown"
-              onClick={() => showPopup(el.id, true)}
             >
               <div className="obraz">
                   <img src={el.img} alt='miod'  ></img>
@@ -31,7 +29,8 @@ const Kafel = ({popups, showPopup}) => {
               <div className="tekst_pod_obrazem">
                 <p>{el.name}</p>
               </div>
-            </div>
+            </div></Link>
+          
           ))
     )
     

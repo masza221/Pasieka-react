@@ -18,6 +18,10 @@
           {
             entry.target.classList.add("show--fadedown");
           }
+          if( entry.target.classList.contains("fadein"))
+          {
+            entry.target.classList.add("show--fadein");
+          }
         appearOnScroll.unobserve(entry.target);
       }
     });

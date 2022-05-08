@@ -17,7 +17,7 @@ const Info = () => {
 
 
     return (
-        <div className='about'>
+        <div id='about' className='about'>
            <div className="info fadeup">
            <p>
               <img src="obrazy/warranty.svg" alt="jakość" /><br />

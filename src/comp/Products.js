@@ -1,32 +1,38 @@
 import { useState, useEffect } from "react";
 import "../css/products.css";
-import { getPopups } from "../api/getPopups.js";
+import { getProducts } from "../api/getPopups.js";
 import Kafel from "./Kafel.js";
 import Fala from "./Fala.js";
+import Title from "./Title";
+import Popup from "./Popup";
+import { Route, Routes } from "react-router-dom";
 
-const Products = ({ setActive }) => {
-  const [popups, setPopups] = useState([]);
+const Products = () => {
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    getPopups().then((respone) => {
-      setPopups(respone);
-    });
+    const getData = async () => {
+      const data = await getProducts()
+      setProducts(data)
+    }
+    getData()
   }, []);
 
-  function showPopup(id, bool) {
-    setActive({
-        id:id,
-        isTrue:bool
-    });
-    document.querySelector("body").style.overflow = "hidden";
-  }
 
   return (
     <>
       <Fala ></Fala>
-      <div className="pre-title">Miody</div>
-      <section id="produkty">     
-        <Kafel popups={popups} showPopup={(val,val2) => showPopup(val,val2)}></Kafel>
+      <section className="products">
+        <Routes>
+          <Route path="*" element={
+            <>
+              <Title text="Miody" />
+              <Kafel products={products} />
+            </>
+          } />
+          <Route path="/honey/:id" element={<Popup />} />
+        </Routes>
+
       </section>
     </>
   );
