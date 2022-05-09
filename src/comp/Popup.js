@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import '../css/popup.css';
 import { getProducts } from '../api/getPopups';
 import { Link, useParams } from 'react-router-dom';
+import { useAuth } from "../contexts/AuthContext";
+
 
 
 const Popup = () => {
@@ -9,6 +11,12 @@ const Popup = () => {
     const [values, setValues] = useState([{}])
     const { id } = useParams();
     const [loading, setLoading] = useState(true)
+    const {addToCart} = useAuth()
+
+   const handleClick = (e) =>{
+        e.preventDefault()
+        addToCart(values)
+    }
 
     useEffect(() => {
         const getData = async () => {
@@ -41,6 +49,7 @@ const Popup = () => {
                         <p>
                             {values.content}
                         </p>
+                        <button onClick={handleClick} className='button popup__btn'>Dodaj do koszyka</button>
                     </div>: ""
                     }
                    

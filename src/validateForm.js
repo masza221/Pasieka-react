@@ -1,4 +1,4 @@
- const validateForm = (email , pass, pass2) => {
+ const validateRegForm = (email , pass, pass2) => {
 
 
     const error = {}
@@ -50,4 +50,4 @@
     return error
   };
 
-  export {validateForm, validateLoginForm}
+  export {validateRegForm, validateLoginForm}

@@ -11,7 +11,21 @@ export function useAuth() {
 
 export function AuthProvider({children}) {
     const [currentUser, setCurrentUser] = useState()
+    const [cart, setCart] = useState([]);
     const [loading, setLoading] = useState(true)
+
+    function addToCart(product){
+
+        const test = cart.find(e =>e.id === product.id)
+
+        if(test){
+            if(!test.nb) {test.nb = 0}
+            cart[cart.indexOf(test)] = {...test, nb:test.nb +1  }
+           return setCart([...cart])        
+        }
+      return   setCart([...cart, product])
+    }
+
     function signup(email, password)
     {
         return createUserWithEmailAndPassword(auth,email, password)
@@ -35,6 +49,8 @@ export function AuthProvider({children}) {
 
     const value = {
         currentUser,
+        cart,
+        addToCart,
         login,
         logout,
         signup

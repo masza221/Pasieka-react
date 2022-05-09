@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState, useForm } from 'react'
+import { Link} from 'react-router-dom';
 
 export default function AddProduct() {
 
-  const [errors, setError] = useState({
-    email: "",
-    password: "",
-    confirmPassword: "",
-  });
+  const [submiting, setSubmiting] = useState()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(e)
+  }
 
     
   return (
@@ -16,7 +18,7 @@ export default function AddProduct() {
         <h1 className='login__title'>Register</h1>
         <form className='login__form' onSubmit={handleSubmit}>
           <div className="login__box">
-            <label>Title</label>
+            <label>Nazwa w Kafelku</label>
             <br />
             <input
               type="text"
@@ -24,32 +26,34 @@ export default function AddProduct() {
             />
           </div>
           <div className="login__box">
-            <label>Password</label>
+            <label>Nazwa miodu</label>
             <br />
             <input
               type="password"
-              value={password}
-              onChange={(e) => {
-                setPassword(e.target.value);
-                setError({ ...errors, password: "" });
-              }}
-              name="password"
-              id='password'
               className="login__input"
             />
           </div>
           <div className="login__box">
-            <label>Confirm Password</label>
+            <label>Cena</label>
             <br />
             <input
               type="password"
-              value={confirmPassword}
-              onChange={(e) => {
-                setCofirmPassword(e.target.value);
-                setError({ ...errors, confirmPassword: "" });
-              }}
-              name="confirmPassword"
-              id='confirmPassword'
+              className="login__input"
+            />
+          </div>
+          <div className="login__box">
+            <label>Img link</label>
+            <br />
+            <input
+              type="password"
+              className="login__input"
+            />
+          </div>
+          <div className="login__box">
+            <label>Zawartość</label>
+            <br />
+            <input
+              type="password"
               className="login__input"
             />
           </div>

@@ -8,16 +8,30 @@ import Login from "./Login";
 import ProtectedRoute from "../comp/ProtectedRoute";
 import { Routes, Route, Link } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
+import AddProduct from "./AddProduct";
+import { getNotes } from "../api/getPopups.js";
+import { useState, useEffect } from "react";
 
 function App() {
 
-  const { currentUser, logout } = useAuth()
+  const { currentUser, logout,cart } = useAuth()
+  const [notes, setNotes] = useState()
+
+  useEffect(() => {
+    const getData = async () => {
+      const data = await getNotes()
+
+      setNotes(data)
+    }
+    getData()
+  }, []);
 
   return (
     <div className="app">
+      {console.log(notes)}
       <Routes>
         <Route path='*' element={<>
-          {!currentUser ? <Link to="/login"><button className="button--login"><span>Zaloguj się</span></button></Link> : <button className="button--login" onClick={() => logout()}>Wyloguj</button>}
+          {!currentUser ? <Link to="/login"><button className="button"><span>Zaloguj się</span></button></Link> : <button className="button" onClick={() => logout()}>Wyloguj</button>}
           <Front></Front>
           <Info></Info>
           <Products></Products>
@@ -41,6 +55,16 @@ function App() {
               isAllowed={!currentUser}
             >
               <Login />
+            </ProtectedRoute>
+          }></Route>
+          <Route
+          path='/products/add'
+          element={
+            <ProtectedRoute
+              redirectPath="/"
+              isAllowed={currentUser}
+            >
+              <AddProduct />
             </ProtectedRoute>
           }></Route>
 

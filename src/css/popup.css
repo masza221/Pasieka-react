@@ -86,3 +86,9 @@
   width: 150px;
   border-radius: 2rem;
 }
+.popup__btn{
+  position: relative;
+  top: unset;
+  right: unset;
+
+}

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { validateForm } from '../validateForm';
+import { validateRegForm } from '../validateForm';
 import "../css/register.css"
 import { Link , useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext'
@@ -22,7 +22,7 @@ export default function Register() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setError(validateForm(email, password, confirmPassword))
+    setError(validateRegForm(email, password, confirmPassword))
     setSubmiting(true)
   }
 
