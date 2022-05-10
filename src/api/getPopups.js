@@ -11,8 +11,8 @@ const postCollectionRef = collection(db,"products")
     return products
 }
 
-const getNotes = async () => {
-    const data = await fetch("http://localhost:3001/notes")
-    return await data.json();
-}
-export {getProducts, getNotes}
+// const getNotes = async () => {
+//     const data = await fetch("http://localhost:3001/notes")
+//     return await data.json();
+// }
+export {getProducts}

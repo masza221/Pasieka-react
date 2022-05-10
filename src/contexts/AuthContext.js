@@ -17,13 +17,18 @@ export function AuthProvider({children}) {
     function addToCart(product){
 
         const test = cart.find(e =>e.id === product.id)
-
         if(test){
-            if(!test.nb) {test.nb = 0}
             cart[cart.indexOf(test)] = {...test, nb:test.nb +1  }
            return setCart([...cart])        
         }
-      return   setCart([...cart, product])
+      return   setCart([...cart, {...product, nb:1}])
+    }
+
+    function removeFromCart(product){
+
+      const newCart = cart.filter(el => el.id !== product.id)
+
+      return   setCart([...newCart])
     }
 
     function signup(email, password)
@@ -50,6 +55,7 @@ export function AuthProvider({children}) {
     const value = {
         currentUser,
         cart,
+        removeFromCart,
         addToCart,
         login,
         logout,

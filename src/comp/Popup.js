@@ -42,7 +42,7 @@ const Popup = () => {
                         <div className="popop__title">
                             <h2>{values.title}</h2>
                         </div>
-                        <p className="popup__price">{values.price}</p>
+                        <p className="popup__price">{values.price} ZŁ</p>
                         <div className="popup__photo">
                             <img className='photo__img' src={values.img} alt='miod'  ></img>
                         </div>
