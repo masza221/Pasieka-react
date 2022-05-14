@@ -107,7 +107,6 @@ export default function Login() {
     
               <input disabled={!errors && submiting} className='login__submit' type="submit" value="Submit" />
             </form>
-            <button className='login__submit'>Login with Google</button>
             <Link className='register__link' to="/register">No account? Register</Link>
           </div>
         </>
