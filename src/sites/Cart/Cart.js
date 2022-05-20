@@ -10,6 +10,7 @@ const Cart = () => {
   return (
     <>
       {cart && cart.map(el => (
+        
         <Product
           key={el.id}
           imgSrc={el.img}
