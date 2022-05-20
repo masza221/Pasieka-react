@@ -5,8 +5,14 @@ import { Link, useParams } from 'react-router-dom';
 import { useCart } from '../../../contexts/CartContext';
 
 
+const getData = async (id) => {
+    const data = await getProducts()
+    const element = data.find(el => el.id === +id)
+    return element
+  }
 
-const Popup = ({products}) => {
+
+const Popup = () => {
 
     const [values, setValues] = useState([{}])
     const { id } = useParams();
@@ -19,10 +25,10 @@ const Popup = ({products}) => {
     }
 
     useEffect(() => {
-        const element = products.find(el => el.id === +id)
-        setValues(element)
-        setLoading(false)
-    }, [id]);
+
+        getData(id).then(setValues,setLoading(false))
+      }, [id]);
+
 
 
     return (
